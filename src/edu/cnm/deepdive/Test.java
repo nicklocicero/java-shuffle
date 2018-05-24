@@ -1,23 +1,22 @@
 package edu.cnm.deepdive;
 
 import java.util.Arrays;
-import java.util.Random;
 
 /**
  * 
  * @author spy
  *
  */
-public class Shuffle {
+public class Test {
   
   /**
    * 
    * @param args
    */
   public static void main(String[] args) {
-    int[] deck = createDeck(Integer.parseInt(args[0]));
+    int[] deck = createDeck(100);
     reveal(deck);
-    shuffle(deck);
+    ArrayShuffles.shuffle(deck);
     reveal(deck);
   }
   
@@ -27,16 +26,6 @@ public class Shuffle {
       deck[i] = i;
     }
     return deck;
-  }
-  
-  private static void shuffle(int[] deck) {
-    Random rng = new Random();
-    for (int i = deck.length - 1; i > 0; i--) {
-      int source = rng.nextInt(i);
-      int temp = deck[i];
-      deck[i] = deck[source];
-      deck[source] = temp;
-    }
   }
   
   private static void reveal(int[] deck) {
