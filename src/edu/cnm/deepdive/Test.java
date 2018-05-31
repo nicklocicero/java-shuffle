@@ -28,11 +28,31 @@ public class Test {
     return deck;
   }
   
-  private static void reveal(int[] deck) {
-//    for (int card : deck) {
-//      System.out.print(card + " ");
-//    }
-//    System.out.println();
+  public static void reveal(int[] deck) {
+    System.out.println(Arrays.toString(deck));
+  }
+  
+  public static void reveal(long[] deck) {
+    System.out.println(Arrays.toString(deck));
+  }
+  
+  public static void reveal(short[] deck) {
+    System.out.println(Arrays.toString(deck));
+  }
+  
+  public static void reveal(char[] deck) {
+    System.out.println(Arrays.toString(deck));
+  }
+  
+  public static void reveal(boolean[] deck) {
+    System.out.println(Arrays.toString(deck));
+  }
+  
+  public static void reveal(double[] deck) {
+    System.out.println(Arrays.toString(deck));
+  }
+  
+  public static void reveal(float[] deck) {
     System.out.println(Arrays.toString(deck));
   }
 }
